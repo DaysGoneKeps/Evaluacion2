@@ -11,34 +11,34 @@
     <div class="card shadow p-4 rounded">
         <form asp-action="Crear" method="post">
             <div class="mb-3">
-                <label asp-for="Nombre" class="form-label">Nombre</label>
-                <input asp-for="Nombre" class="form-control" required />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
+                <label asp-for="Nombre" >Nombre</label>
+                <input asp-for="Nombre" required />
+                <span asp-validation-for="Nombre" ></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="Edad" class="form-label">Edad</label>
-                <input asp-for="Edad" type="number" min="0" class="form-control" required />
-                <span asp-validation-for="Edad" class="text-danger"></span>
+                <label asp-for="Edad" >Edad</label>
+                <input asp-for="Edad" type="number" min="0"  required />
+                <span asp-validation-for="Edad" ></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="Tipo" class="form-label">Tipo (perro, gato, etc.) </label>
-                <input asp-for="Tipo" class="form-control" required />
-                <span asp-validation-for="Tipo" class="text-danger"></span>
+                <label asp-for="Tipo">Tipo (perro, gato, etc.) </label>
+                <input asp-for="Tipo" required />
+                <span asp-validation-for="Tipo"></span>
             </div>
 
             <div class="mb-4">
-                <label asp-for="Estado" class="form-label">Estado de Adopción </label>
-                <select asp-for="Estado" class="form-select">
+                <label asp-for="Estado" >Estado de Adopción </label>
+                <select asp-for="Estado">
                     <option value="disponible">Disponible</option>
                     <option value="adoptada">Adoptado(a)</option>
                 </select>
-                <span asp-validation-for="Estado" class="text-danger"></span>
+                <span asp-validation-for="Estado"></span>
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-success">Registrar Mascota</button>
+                <button type="submit">Registrar Mascota</button>
             </div>
         </form>
     </div>

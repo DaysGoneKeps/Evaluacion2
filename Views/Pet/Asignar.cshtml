@@ -9,9 +9,9 @@
 
         <form asp-action="Adoptar" method="post">
             <div class="mb-3">
-                <label for="PetId" class="form-label">Mascota</label>
-                <select id="PetId" name="PetId" class="form-select" required>
-                    <option value="">-- Selecciona una mascota --</option>
+                <label for="PetId">Mascota:</label>
+                <select id="PetId" name="PetId" required>
+                   
                     @foreach (var pet in mascotas)
                     {
                         <option value="@pet.Id">@pet.Nombre (@pet.Tipo)</option>
@@ -20,12 +20,12 @@
             </div>
 
             <div class="mb-3">
-                <label for="NombreAdoptante" class="form-label">Nombre del Adoptante</label>
-                <input type="text" name="NombreAdoptante" id="NombreAdoptante" class="form-control" required />
+                <label for="NombreAdoptante">Nombre del Adoptante</label>
+                <input type="text" name="NombreAdoptante" id="NombreAdoptante" required />
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Asignar Adopción</button>
+                <button type="submit">Asignar </button>
             </div>
         </form>
     </div>

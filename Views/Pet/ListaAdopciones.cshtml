@@ -5,11 +5,11 @@
 }
 
 <div class="container mt-5">
-    <div class="card shadow p-4 rounded">
+    <div >
         <h3 class="mb-4 text-center text-dark">Lista de Adopciones</h3>
 
-        <table class="table table-striped">
-            <thead class="table-dark">
+        <table class="table">
+            <thead>
                 <tr>
                     <th>Mascota</th>
                     <th>Adoptante</th>
@@ -23,9 +23,9 @@
                         <td>@adopcion.Pets.Nombre</td>
                         <td>@adopcion.Adopter.Nombre</td>
                         <td>
-                            <span class="badge bg-success">
-                                @adopcion.Pets.Estado
-                            </span>
+                           
+                             @adopcion.Pets.Estado
+                           
                         </td>
                     </tr>
                 }
