@@ -76,6 +76,16 @@ namespace Evaluacion2.Controllers
             return RedirectToAction("","");
         }
 
+        public async Task<IActionResult> ListaAdopciones()
+        {
+            var adopciones = await _context.Adoptions
+                .Include(a => a.Pets)
+                .Include(a => a.Adopter)
+                .ToListAsync();
+
+            return View(adopciones);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
