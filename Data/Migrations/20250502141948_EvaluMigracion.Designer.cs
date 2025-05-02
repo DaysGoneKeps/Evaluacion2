@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Evaluacion2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250502135415_dockerMigracion")]
-    partial class dockerMigracion
+    [Migration("20250502141948_EvaluMigracion")]
+    partial class EvaluMigracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

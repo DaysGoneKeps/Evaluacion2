@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Evaluacion2.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class dockerMigracion : Migration
+    public partial class EvaluMigracion : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
